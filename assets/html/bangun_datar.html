@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPL Shapes Calculator</title>
+    <link rel="stylesheet" href="../css/awesomefonts/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../../index.html">RPL Calculator</a>
+        <div class="menu-button">
+            <a href="javascript:;" id="hamburger">&#9776;</a>
+            <nav id="sideNav">
+                <a class="title" href="../../index.html">RPL CALCULATOR</a>
+                <a href="bangun_ruang.html">Bangun Ruang</a>
+                <a href="bangun_datar.html">Bangun Datar</a>
+            </nav>
+        </div>
+    </div>
+    <h1>BANGUN DATAR</h1>
+    <div class="container">
+        <div id="persegi" class="shape-type__card">
+            <h2>Persegi</h2>
+            <i class="fa-solid fa-square"></i>
+            <p>Luas Persegi : <br> Sisi x Sisi</p>
+            <p>Keliling Persegi : <br> 4 x Sisi</p>
+        </div>
+        <div id="persegiPanjang" class="shape-type__card">
+            <h2>Persegi panjang</h2>
+            <i class="fa-solid fa-rectangle-xmark"></i>
+            <p>Luas Persegi Panjang : <br> Panjang x Lebar</p>
+            <p>Keliling Persegi Panjang : <br> 2 x (Panjang + Lebar)</p>
+        </div>
+        <div id="lingkaran" class="shape-type__card">
+            <h2>Lingkaran</h2>
+            <i class="fa-solid fa-circle"></i>
+            <p>Luas Lingkaran : <br> &pi; r<sup>2</sup></p>
+            <p>Keliling Lingkaran : <br>2 &pi; r</p>
+        </div>
+        <div id="jajarGenjang" class="shape-type__card">
+            <h2>Jajar Genjang</h2>
+            <i class="fa-solid fa-rectangle-xmark"></i>
+            <p>Luas Jajar Genjang : <br> a x t</p>
+            <p>Keliling Jajar Genjang : <br>2 x (a + b)</p>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div id="calculator">
+            <div class="calculator__card">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/calculate_datar.js"></script>
+</body>
+
+</html>

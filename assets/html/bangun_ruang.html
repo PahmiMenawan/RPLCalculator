@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPL Shapes Calculator</title>
+    <link rel="stylesheet" href="../css/awesomefonts/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../../index.html">RPL Calculator</a>
+        <div class="menu-button">
+            <a href="javascript:;" id="hamburger">&#9776;</a>
+            <nav id="sideNav">
+                <a class="title" href="../../index.html">RPL CALCULATOR</a>
+                <a href="bangun_ruang.html">Bangun Ruang</a>
+                <a href="bangun_datar.html">Bangun Datar</a>
+            </nav>
+        </div>
+    </div>
+    <h1>BANGUN RUANG</h1>
+    <div class="container">
+        <div id="kubus" class="shape-type__card">
+            <h2>Kubus</h2>
+            <i class="fa-solid fa-cube"></i>
+            <p>Volume Kubus : <br> Sisi x Sisi x Sisi</p>
+            <p>Luas Permukaan Kubus : <br> 6 x (Sisi x Sisi)</p>
+        </div>
+        <div id="balok" class="shape-type__card">
+            <h2>Balok</h2>
+            <i class="fa-solid fa-cube"></i>
+            <p>Volume Balok : <br> Panjang x Lebar x Tinggi</p>
+            <p>Luas Permukaan Balok : <br> 2 x (PL + PT + LT)</p>
+        </div>
+        <div id="tabung" class="shape-type__card">
+            <h2>Tabung</h2>
+            <i class="fa-solid fa-vial"></i>
+            <p>Volume Tabung : <br> &pi; r<sup>2</sup> t</p>
+            <p>Volume Tabung : <br>2 &pi; r ( r + t )</p>
+        </div>
+        <div id="bola" class="shape-type__card">
+            <h2>Bola</h2>
+            <i class="fa-solid fa-bowling-ball"></i>
+            <p>Volume Bola : <br>
+                (4/3) &pi; r<sup>3</sup></p>
+            <p>Luas Permukaan Bola : <br>
+                4 &pi; r<sup>2</sup></p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="calculator">
+            <div class="calculator__card">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/calculate_ruang.js"></script>
+</body>
+
+</html>
