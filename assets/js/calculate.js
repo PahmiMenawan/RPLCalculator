@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const label2 = document.getElementById("label2");
   const label3 = document.getElementById("label3");
   const submit = document.getElementById("submit");
+  const title = document.getElementById("shape_title");
 
   let currentShape = null;
   cards.forEach((card) => {
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       switch (shapeId) {
         case "kubus":
+          title.textContent = "Kubus";
           result.classList.add("calculator__card");
           label1.textContent = "Sisi (Cm)";
           label2.textContent = "";
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
 
         case "balok":
+          title.textContent = "Balok";
           result.classList.add("calculator__card");
           label1.textContent = "Panjang (Cm)";
           label2.textContent = "Lebar (Cm)";
@@ -44,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
 
         case "tabung":
+          title.textContent = "Tabung";
           result.classList.add("calculator__card");
           label1.textContent = "Jari-jari (Cm)";
           label2.textContent = "Tinggi (Cm)";
@@ -55,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
 
         case "bola":
+          title.textContent = "Bola";
           result.classList.add("calculator__card");
           label1.textContent = "Jari-jari (Cm)";
           label2.textContent = "";
@@ -66,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
 
         case "persegi":
+          title.textContent = "Persegi";
           result.classList.add("calculator__card");
           label1.textContent = "Sisi (Cm)";
           label2.textContent = "";
@@ -77,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
 
         case "persegiPanjang":
+          title.textContent = "Persegi Panjang";
           result.classList.add("calculator__card");
           label1.textContent = "Panjang (Cm)";
           label2.textContent = "Lebar (Cm)";
@@ -88,6 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
 
         case "lingkaran":
+          title.textContent = "Lingkaran";
           result.classList.add("calculator__card");
           label1.textContent = "Jari-jari (Cm)";
           label2.textContent = "";
@@ -99,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
 
         case "jajarGenjang":
+          title.textContent = "Jajar Genjang";
           result.classList.add("calculator__card");
           label1.textContent = "Alas (Cm)";
           label2.textContent = "Tinggi (Cm)";
@@ -128,6 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <b>Kubus</b><br>
             Volume: ${bangun.volume().toFixed(2)} cm³<br>
             Luas Permukaan: ${bangun.luasPermukaan().toFixed(2)} cm²
+     <br><button onclick="window.location.reload();">Reset</button>
           `;
         break;
       case "balok":
@@ -141,6 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <b>Balok</b><br>
             Volume: ${bangun.volume().toFixed(2)} cm³<br>
             Luas Permukaan: ${bangun.luasPermukaan().toFixed(2)} cm²
+     <br><button onclick="window.location.reload();">Reset</button>
           `;
         break;
       case "tabung":
@@ -153,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <b>Tabung</b><br>
             Volume: ${bangun.volume().toFixed(2)} cm³<br>
             Luas Permukaan: ${bangun.luasPermukaan().toFixed(2)} cm²
+     <br><button onclick="window.location.reload();">Reset</button>
           `;
         break;
       case "bola":
@@ -163,12 +175,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <b>Bola</b><br>
             Volume: ${bangun.volume().toFixed(2)} cm³<br>
             Luas Permukaan: ${bangun.luasPermukaan().toFixed(2)} cm²
+     <br><button onclick="window.location.reload();">Reset</button>
           `;
         break;
       case "persegi":
-        const sPersegi = parseFloat(
-          prompt("Masukkan panjang sisi persegi (cm):")
-        );
+        const sPersegi = parseFloat(var1.value);
         if (isNaN(sPersegi) || sPersegi <= 0)
           return alert("Masukkan nilai valid!");
         bangun = new Persegi(sPersegi);
@@ -176,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <b>Persegi</b><br>
             Luas: ${bangun.luas().toFixed(2)} cm²<br>
             Keliling: ${bangun.keliling().toFixed(2)} cm
+     <br><button onclick="window.location.reload();">Reset</button>
           `;
         break;
       case "persegiPanjang":
@@ -188,6 +200,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <b>Persegi Panjang</b><br>
             Luas: ${bangun.luas().toFixed(2)} cm²<br>
             Keliling : ${bangun.keliling().toFixed(2)} cm
+     <br><button onclick="window.location.reload();">Reset</button>
+
           `;
         break;
       case "lingkaran":
@@ -199,6 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <b>lingkaran</b><br>
             Luas: ${bangun.luas().toFixed(2)} cm²<br>
             Keliling : ${bangun.keliling().toFixed(2)} cm
+     <br><button onclick="window.location.reload();">Reset</button>
+
           `;
         break;
       case "jajarGenjang":
@@ -213,6 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <b>Jajar Genjang</b><br>
     Luas: ${bangun.luas().toFixed(2)} cm²<br>
     Keliling : ${bangun.keliling().toFixed(2)} cm
+     <br><button onclick="window.location.reload();">Reset</button>
   `;
         break;
       default:
