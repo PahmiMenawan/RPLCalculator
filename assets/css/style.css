@@ -103,7 +103,6 @@ nav a.title{
     display: flex;
     text-align: center;
     flex-direction: column;
-    max-width: 290px;
 }
 
 .shape-type__card:hover{
@@ -114,4 +113,9 @@ i.fa-solid{
     text-align: center;
     font-size: 3rem;
     width: 100%;
+}
+
+
+abbr{
+    text-decoration: none;
 }

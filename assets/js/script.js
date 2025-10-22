@@ -74,11 +74,11 @@ class Lingkaran extends BangunDatar{
     }
 
     luas(){
-        return Math.PI * jari * jari
+        return Math.PI * this.jari * this.jari
     }
 
     keliling(){
-        return Math.PI * (jari * 2)
+        return Math.PI * (this.jari * 2)
     }
 }
 
