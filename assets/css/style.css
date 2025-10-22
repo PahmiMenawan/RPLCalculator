@@ -119,10 +119,12 @@ abbr{
     text-decoration: none;
 }
 
-.variables{
+.variables,
+.submit{
     display: none;
 }
 
-.variables.show{
+.variables.show,
+.submit.show{
     display: block;
 }
