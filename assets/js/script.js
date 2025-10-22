@@ -262,8 +262,8 @@ nav.addEventListener('click', () => {
 const br = document.getElementById('bangunRuang');
 const bd = document.getElementById('bangunDatar');
 br.addEventListener('click', ()=>{
-    window.location.href = '../assets/html/bangun_ruang.html'
+    window.location.href = 'assets/html/bangun_ruang.html'
 })
 bd.addEventListener('click', ()=>{
-    window.location.href = '../assets/html/bangun_datar.html'
+    window.location.href = 'assets/html/bangun_datar.html'
 })

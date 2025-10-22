@@ -91,7 +91,7 @@ nav a.title{
     display: flex;
     text-align: center;
     flex-direction: column;
-    max-width: 290px;
+    width: 290px;
 }
 
 .calculator__card{
@@ -115,7 +115,14 @@ i.fa-solid{
     width: 100%;
 }
 
-
 abbr{
     text-decoration: none;
+}
+
+.variables{
+    display: none;
+}
+
+.variables.show{
+    display: block;
 }

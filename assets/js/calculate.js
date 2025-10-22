@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".shape-type__card");
   const result = document.getElementById("result");
+  const var1 = document.getElementById("var1");
+  const var2 = document.getElementById("var2");
+  const var3 = document.getElementById("var3");
+
+
+
+
 
   cards.forEach((card) => {
     card.addEventListener("click", () => {
@@ -9,9 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       switch (shapeId) {
         case "kubus":
-          const sKubus = parseFloat(
-            prompt("Masukkan panjang sisi kubus (cm):")
-          );
+          // const sKubus = parseFloat(
+          //   prompt("Masukkan panjang sisi kubus (cm):")
+          // );
+          const sKubus = 2
+          var1.classList.add('show')
           if (isNaN(sKubus) || sKubus <= 0)
             return alert("Masukkan nilai valid!");
           bangun = new Kubus(sKubus);
@@ -133,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       window.location.href = "#result";
       result.classList.add("calculator__card");
-      result.innerHTML = output;
+      // result.innerHTML = output;
     });
   });
 });
